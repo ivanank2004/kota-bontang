@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #508C9B;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.main-content {
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+aside {
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: #f8f8f8;
+}
+
+header {
+    display: inline;
+}
+
+h1,
+h2,
+h3 {
+    color: #f8f8f8;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #f8f8f8;
+}
+
+footer p{
+    color: black;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #134B70;
+    text-align: center;
+    color: #f8f8f8;
+}
+
+nav {
+    background-color: #201E43;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f8f8f8;
+    display: block;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+footer {
+    font-weight: bold;
+    padding: 20px;
+    color: #134B70;
+    background-color: #EEEEEE;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-content {
+    background-color: #134B70;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile-image {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+}
+
+.perusahaan-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.wisata-image {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.kuliner-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#tentang,
+#sejarah {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#pkt-card,
+#badak-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+#beras-basah-card,
+#bontang-kuala-card,
+#mangrove-card,
+#masjid-terapung-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    width: 582px;
+    text-align: center;
+}
+
+
+#kuliner img {
+    border-radius: 5px;
+}
+
+.profile-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.profile-card header {
+    text-align: center;
+}
+
+#perusahaan,
+#wisata,
+#kuliner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.perusahaan-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.wisata-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        padding-inline: 0;
+        gap: 1rem;
+    }
+
+    .nav-list{
+        text-align: center;
+    }
+
+    .jumbotron {
+        padding: 30px 20px;
+        font-size: 18px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #pkt-card,
+    #badak-card,
+    #beras-basah-card,
+    #bontang-kuala-card,
+    #mangrove-card,
+    #masjid-terapung-card {
+        width: 100%;
+    }
+
+    .featured-image,
+    .profile-image,
+    .perusahaan-image,
+    .wisata-image,
+    .kuliner-image {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .perusahaan-container,
+    .wisata-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+}
